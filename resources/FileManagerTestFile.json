@@ -1,0 +1,9 @@
+{
+    "name": "John",
+    "age": 30,
+    "city": "New York",
+    "data": {
+        "money": 0,
+        "attractiveness": 0
+    }
+}
