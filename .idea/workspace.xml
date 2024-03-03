@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b2fef160-643e-4a6d-a0d0-6452d2113da7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/AdaptiveGradientOptimizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/includes/AdaptiveGradientOptimizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/AdaptiveMomentEstimationOptimizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/includes/AdaptiveMomentEstimationOptimizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/CSVFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/includes/CSVFormatter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/Core.py" beforeDir="false" afterPath="$PROJECT_DIR$/includes/Core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/GradientDescentOptimizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/includes/GradientDescentOptimizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/MathFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/includes/MathFunction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/MomentumGradientDescentOptimizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/includes/MomentumGradientDescentOptimizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/NelderMeadOptimizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/includes/NelderMeadOptimizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/NesterovAcceleratedGradientOptimizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/includes/NesterovAcceleratedGradientOptimizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/OptimizationRecord.py" beforeDir="false" afterPath="$PROJECT_DIR$/includes/OptimizationRecord.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/Optimizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/includes/Optimizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output files/optimizations sorted by functions/Hyeprbolic paraboloid.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output files/old optimizations sorted by functions/Hyeprbolic paraboloid.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output files/optimizations sorted by functions/Quadratic function.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output files/old optimizations sorted by functions/Quadratic function.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output files/optimizations sorted by functions/Rosenbrock function.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output files/old optimizations sorted by functions/Rosenbrock function.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output files/optimizations sorted by functions/podminka_libre_office.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output files/old optimizations sorted by functions/podminka_libre_office.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output files/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/output files/old_output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2WwwspqNscwPbnUpJpt5FQeDf9l" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="numeric_methods_testing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="temp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="numeric_methods_testing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/temp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.temp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2fef160-643e-4a6d-a0d0-6452d2113da7" name="Changes" comment="" />
+      <created>1697657160587</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697657160587</updated>
+    </task>
+    <servers />
+  </component>
+</project>

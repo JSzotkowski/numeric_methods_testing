@@ -20,6 +20,11 @@ class CSVFormatter:
             line += f'"{opt_rec["label"]}"' + " " * number_of_columns_per_optimizer
         rs.append(line)
 
+        line = ""
+        for opt_rec in function_optimizations:
+            line += f'"{opt_rec["n_steps"]}"' + " " * number_of_columns_per_optimizer
+        rs.append(line)
+
         for opt_property in function_optimizations[0]["optimizer"].keys():
             line = ""
             for opt_rec in function_optimizations:

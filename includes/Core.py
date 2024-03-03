@@ -57,7 +57,8 @@ class Core:
             "Load previous optimization from output.json file.",
             "Save current optimization to output.json file.",
             "Draw function optimization plot.",
-            "Export optimizations CSV files sorted by functions."
+            "Export optimizations CSV files sorted by functions.",
+            "Print simplified results."
         ]
 
         callbacks = [
@@ -66,7 +67,8 @@ class Core:
             self.load_previous_optimization,
             self.save_current_optimization,
             self.draw_menu,
-            self.export_optimizations_csv_files_sorted_by_functions
+            self.export_optimizations_csv_files_sorted_by_functions,
+            self.print_simplified_results
         ]
 
         while True:
@@ -135,3 +137,13 @@ class Core:
 
             fm = FileManager(os.path.join(output_dir_path, f'{function_name}.csv'))
             fm.save_list_to_file(lines_to_save)
+
+    def print_simplified_results(self):
+        assert self.optimization_finished
+
+        temp = self.records
+        self.records = sorted(self.records, key=lambda k: k.number_of_steps)
+        for i, rec in enumerate(self.records):
+            print(f'{i+1}. {rec.number_of_steps} - {rec.get_label()}')
+
+        self.records = temp

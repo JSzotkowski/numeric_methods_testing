@@ -1,3 +1,5 @@
+from math import sqrt
+
 class MathFunction:
     def __init__(self, label, func, derivative, desired_minimum):
         self.label = label
@@ -19,6 +21,11 @@ class MathFunction:
 
     def derivative_at(self, value):
         return self.derivative(*value)
+
+    def is_approximation_close_enough(self, approx):
+        x, y = approx
+        tx, ty = self.desired_minimum
+        return sqrt((x - tx)**2 + (y-ty)**2) < 1e-8
 
     def get_json_dict(self):
         ans = dict()

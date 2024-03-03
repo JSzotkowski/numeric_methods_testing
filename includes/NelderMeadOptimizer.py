@@ -16,11 +16,15 @@ class NelderMeadOptimizer(Optimizer):
         n = len(start)
         centroid = np.asarray(start).reshape((n, 1))
         simplex = self.get_initial_simplex(centroid, n)
+        flag = False
 
-        for _ in range(self.number_of_steps):
+        for _ in range(self.max_number_of_steps):
             simplex.sort(key=lambda k: func.evaluate(k))
             centroid = self.get_centroid_of_a_simplex(simplex[:-1])
             ans.append(tuple([row[0] for row in self.get_centroid_of_a_simplex(simplex)]))
+            if func.is_approximation_close_enough(centroid):
+                flag = True
+                break
 
             reflected = self.get_reflected_point(centroid, simplex[-1], alpha)
 
@@ -51,7 +55,9 @@ class NelderMeadOptimizer(Optimizer):
 
             self.replace_all_points_except_the_best(simplex, sigma)
 
-        ans.append(tuple([row[0] for row in self.get_centroid_of_a_simplex(simplex)]))
+        if not flag:
+            ans.append(tuple([row[0] for row in self.get_centroid_of_a_simplex(simplex)]))
+        self.number_of_steps = len(ans) - 1
 
         return ans
 
@@ -105,7 +111,7 @@ class NelderMeadOptimizer(Optimizer):
         rs = []
         for i in range(n):
             i += 1
-            ei = NelderMeadOptimizer.get_canonical_vector(i, n)
+            ei = NelderMeadOptimizer.get_canonical_vector(i, n) * 0.5
             rs.append(ei + centroid.copy())
 
         last_simplex_vertex = centroid.copy()

@@ -13,7 +13,7 @@ class MomentumGradientDescentOptimizer(Optimizer):
 
         past_updates = 0, 0
 
-        for i in range(self.number_of_steps):
+        for i in range(self.max_number_of_steps):
             current = ans[-1]
             dx, dy = func.derivative_at(current)
             upx, upy = - (1 - self.momentum) * dx + self.momentum * past_updates[0], - (
@@ -21,5 +21,9 @@ class MomentumGradientDescentOptimizer(Optimizer):
             x, y = current[0] + self.learning_rate * upx, current[1] + self.learning_rate * upy
             past_updates = upx, upy
             ans.append((x, y))
+            if func.is_approximation_close_enough((x, y)):
+                break
+
+        self.number_of_steps = len(ans) - 1
 
         return ans

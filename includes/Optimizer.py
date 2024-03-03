@@ -1,7 +1,8 @@
 class Optimizer:
     def __init__(self, label, number_of_steps):
         self.label = label
-        self.number_of_steps = number_of_steps
+        self.max_number_of_steps = number_of_steps
+        self.number_of_steps = -1
 
         self.learning_rate = None
         self.momentum = None
@@ -27,7 +28,6 @@ class Optimizer:
         ans = dict()
 
         ans["label"] = self.label
-        ans["n steps"] = self.number_of_steps
         ans["lr"] = self.learning_rate if self.learning_rate is not None else "-"
         ans["mtm"] = self.momentum if self.momentum is not None else "-"
         ans["beta1"] = self.beta1 if self.beta1 is not None else "-"
